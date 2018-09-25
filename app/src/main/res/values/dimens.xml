@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_text">16sp</dimen>
+    <dimen name="left_margin">50dp</dimen>
+    <dimen name="all_other_margins">8dp</dimen>
+    <dimen name="right_margin">16dp</dimen>
+    <dimen name="photo_height">180dp</dimen>
+    <dimen name="icon_size">28dp</dimen>
+</resources>
