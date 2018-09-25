@@ -3,8 +3,8 @@
     <string name="name_text">Sergey Muzipov</string>
     <string name="key_info_text">Software Developer</string>
     <string name="description_text">Just some text</string>
-    <string name="hint_text">Enter a message...</string>
-    <string name="button_send_text">SEND MESSAGE</string>
+    <string name="hint_text">Enter a message…</string>
+    <string name="button_send_text">Send message</string>
     <string name="photo_description">Photo</string>
     <string name="social_text">TextView</string>
     <string name="copyright_text">© 2018 Sergey Muzipov</string>

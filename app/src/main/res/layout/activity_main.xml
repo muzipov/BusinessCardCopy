@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/nameText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/background_dark"
-        android:padding="@dimen/right_margin"
-        android:text="@string/name_text"
-        android:textColor="@android:color/background_light"
-        android:textSize="@dimen/common_text" />
-
     <ImageView
         android:id="@+id/imagePhoto"
         android:layout_width="match_parent"
@@ -69,24 +59,26 @@
         android:layout_marginEnd="@dimen/right_margin"
         android:layout_marginStart="@dimen/left_margin"
         android:layout_marginTop="@dimen/all_other_margins"
-        android:ems="10"
+        android:maxLength="250"
         android:hint="@string/hint_text"
         android:inputType="textPersonName"
         android:textSize="@dimen/common_text" />
 
     <Button
         android:id="@+id/buttonSend"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:layout_marginBottom="@dimen/all_other_margins"
         android:layout_marginEnd="@dimen/right_margin"
         android:layout_marginStart="@dimen/left_margin"
         android:layout_marginTop="@dimen/all_other_margins"
         android:background="@android:color/transparent"
         android:elevation="0dp"
+        android:paddingEnd="@dimen/all_other_margins"
+        android:paddingStart="@dimen/all_other_margins"
         android:text="@string/button_send_text"
         android:textAlignment="textEnd"
-        android:textAllCaps="false"
         android:textSize="@dimen/common_text" />
 
     <TableRow
