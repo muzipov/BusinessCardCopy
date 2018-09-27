@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">BusinessCardCopy</string>
+    <string name="app_name">Business Card</string>
+    <string name="name_text">Sergey Muzipov</string>
+    <string name="key_info_text">Software Developer</string>
+    <string name="description_text">Just some text</string>
+    <string name="hint_text">Enter a message…</string>
+    <string name="button_send_text">Send message</string>
+    <string name="photo_description">Photo</string>
+    <string name="social_text">TextView</string>
+    <string name="copyright_text">© 2018 Sergey Muzipov</string>
+    <string name="vk_logo">VK logo</string>
+    <string name="fb_logo">FB logo</string>
+    <string name="uu_logo">UU logo</string>
+    <string name="noAppMessage">No application found</string>
+    <string name="subjectText">Mail from the&#160;</string>
 </resources>
+
