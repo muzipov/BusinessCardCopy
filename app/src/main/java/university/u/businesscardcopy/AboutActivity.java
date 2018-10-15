@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,35 +17,44 @@ import android.widget.Toast;
 
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     private static final String FB_LINK = "https://www.facebook.com";
     private static final String VK_LINK = "https://vk.com";
     private static final String[] EMAIL_ADRESS = {"muzipov@gmail.com"};
 
+    private Toolbar toolbar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_about);
 
-        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.name_text);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        // Add disclaimer from java code to bottom
-        LinearLayout mainLayout = findViewById(R.id.content);
 
-        TextView copyrightText = new TextView(this);
-        copyrightText.setText(R.string.copyright_text);
+        getSupportActionBar().setTitle(R.string.name_text);
 
-        LinearLayout.LayoutParams mainLayoutParams = new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, // width
-                ViewGroup.LayoutParams.MATCH_PARENT); // height
-
-        mainLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
-
-        copyrightText.setLayoutParams(mainLayoutParams);
-
-        mainLayout.addView(copyrightText);
+//       Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.name_text);
+//
+//        // Add disclaimer from java code to bottom
+//        LinearLayout mainLayout = findViewById(R.id.content);
+//
+//        TextView copyrightText = new TextView(this);
+//        copyrightText.setText(R.string.copyright_text);
+//
+//        LinearLayout.LayoutParams mainLayoutParams = new LinearLayout.LayoutParams(
+//                ViewGroup.LayoutParams.WRAP_CONTENT, // width
+//                ViewGroup.LayoutParams.MATCH_PARENT); // height
+//
+//        mainLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
+//
+//        copyrightText.setLayoutParams(mainLayoutParams);
+//
+//        mainLayout.addView(copyrightText);
 
         //Send Email
         final TextView editText = findViewById(R.id.editText);

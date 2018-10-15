@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Business Card</string>
+    <string name="app_name">Hot News</string>
     <string name="name_text">Sergey Muzipov</string>
     <string name="key_info_text">Software Developer</string>
     <string name="description_text">Just some text</string>
@@ -13,5 +13,8 @@
     <string name="uu_logo">UU logo</string>
     <string name="noAppMessage">No application found</string>
     <string name="subjectText">Mail from the&#160;</string>
+    <string name="about_menu_name">About</string>
+    <string name="news_item_description_text">News image</string>
+    <string name="news_details_image_description">News image</string>
 </resources>
 
