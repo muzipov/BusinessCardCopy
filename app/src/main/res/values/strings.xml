@@ -14,5 +14,7 @@
     <string name="noAppMessage">No application found</string>
     <string name="subjectText">Mail from the&#160;</string>
     <string name="about_menu_name">About</string>
+    <string name="news_item_description_text">News image</string>
+    <string name="news_details_image_description">News image</string>
 </resources>
 
