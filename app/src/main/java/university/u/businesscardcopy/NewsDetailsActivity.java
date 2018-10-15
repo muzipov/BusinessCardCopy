@@ -11,14 +11,13 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.Objects;
+
 public class NewsDetailsActivity extends AppCompatActivity {
-        ImageView imageDetails;
-        TextView titleDetails;
-        TextView textDetails;
-        TextView dateDetails;
-
-    private Toolbar toolbar;
-
+        private ImageView imageDetails;
+        private TextView titleDetails;
+        private TextView textDetails;
+        private TextView dateDetails;
 
 
     @Override
@@ -32,14 +31,16 @@ public class NewsDetailsActivity extends AppCompatActivity {
             dateDetails = findViewById(R.id.date_details);
 
             Intent intent = getIntent();
+            if (intent !=null){
+                setDataFromIntent(intent);
+                setCategoryTitle(intent);
+            }
 
-            setDataFromIntent(intent);
-            setCategoryTitle(intent);
 
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle(R.string.app_name);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name);
 
     }
 
